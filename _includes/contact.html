@@ -4,7 +4,7 @@
 		<p>{{ site.contactTagline }}</p>
 		<div class="split style1">
 			<section>
-				<form method="post" action="#">
+				<form method="post" action="http://formspree.io/{{ site.email }}">
 					<div class="field half first">
 						<label for="name">Name</label>
 						<input type="text" name="name" id="name" />
@@ -46,19 +46,19 @@
 						<h3>Social</h3>
 						<ul class="icons">
 							{% if site.twitter %}
-							<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://twitter.com/{{ site.twitter }}" class="fa-twitter"><span class="label">Twitter</span></a></li>
 							{% endif %}
 							{% if site.facebook %}
-							<li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.facebook.com/{{ site.facebook }}" class="fa-facebook"><span class="label">Facebook</span></a></li>
 							{% endif %}
 							{% if site.github %}
-							<li><a href="#" class="fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://github.com/{{ site.github }}" class="fa-github"><span class="label">GitHub</span></a></li>
 							{% endif %}
 							{% if site.instagram %}
-							<li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.instagram.com/{{ site.instagram }}" class="fa-instagram"><span class="label">Instagram</span></a></li>
 							{% endif %}
 							{% if site.linkedin %}
-							<li><a href="#" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://www.linkedin.com/in/{{ site.linkedin }}" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
 							{% endif %}
 						</ul>
 					</li>
