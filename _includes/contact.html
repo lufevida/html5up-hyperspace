@@ -24,18 +24,24 @@
 			</section>
 			<section>
 				<ul class="contact">
+					{% if site.address %}
 					<li>
 						<h3>Address</h3>
 						<span>{{ site.address }}</span>
 					</li>
+					{% endif %}
+					{% if site.email %}
 					<li>
 						<h3>Email</h3>
-						<a href="#">user@untitled.tld</a>
+						<a href="mailto:{{ site.email }}">{{ site.email }}</a>
 					</li>
+					{% endif %}
+					{% if site.phone %}
 					<li>
 						<h3>Phone</h3>
-						<span>(000) 000-0000</span>
+						<a href="tel:{{ site.phone }}">{{ site.phone }}</a>
 					</li>
+					{% endif %}
 					<li>
 						<h3>Social</h3>
 						<ul class="icons">
