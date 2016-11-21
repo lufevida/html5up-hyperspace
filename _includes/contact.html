@@ -45,11 +45,21 @@
 					<li>
 						<h3>Social</h3>
 						<ul class="icons">
+							{% if site.twitter %}
 							<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
+							{% endif %}
+							{% if site.facebook %}
 							<li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
+							{% endif %}
+							{% if site.github %}
 							<li><a href="#" class="fa-github"><span class="label">GitHub</span></a></li>
+							{% endif %}
+							{% if site.instagram %}
 							<li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
+							{% endif %}
+							{% if site.linkedin %}
 							<li><a href="#" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							{% endif %}
 						</ul>
 					</li>
 				</ul>
