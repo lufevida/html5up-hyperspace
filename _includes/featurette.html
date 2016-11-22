@@ -1,0 +1,57 @@
+{% if site.featuretteTitle %}
+<section id="two" class="wrapper style3 fade-up">
+	<div class="inner">
+		<h2>{{ site.featuretteTitle }}</h2>
+		<p>{{ site.featuretteTagline }}</p>
+		<div class="features">
+			{% if site.feature1Title %}
+			<section>
+				<span class="{{ site.feature1Icon }}"></span>
+				<h3>{{ site.feature1Title }}</h3>
+				<p>{{ site.feature1Tagline }}</p>
+			</section>
+			{% endif %}
+			{% if site.feature2Title %}
+			<section>
+				<span class="{{ site.feature2Icon }}"></span>
+				<h3>{{ site.feature2Title }}</h3>
+				<p>{{ site.feature2Tagline }}</p>
+			</section>
+			{% endif %}
+			{% if site.feature3Title %}
+			<section>
+				<span class="{{ site.feature3Icon }}"></span>
+				<h3>{{ site.feature3Title }}</h3>
+				<p>{{ site.feature3Tagline }}</p>
+			</section>
+			{% endif %}
+			{% if site.feature4Title %}
+			<section>
+				<span class="{{ site.feature4Icon }}"></span>
+				<h3>{{ site.feature4Title }}</h3>
+				<p>{{ site.feature4Tagline }}</p>
+			</section>
+			{% endif %}
+			{% if site.feature5Title %}
+			<section>
+				<span class="{{ site.feature5Icon }}"></span>
+				<h3>{{ site.feature5Title }}</h3>
+				<p>{{ site.feature5Tagline }}</p>
+			</section>
+			{% endif %}
+			{% if site.feature6Title %}
+			<section>
+				<span class="{{ site.feature6Icon }}"></span>
+				<h3>{{ site.feature6Title }}</h3>
+				<p>{{ site.feature6Tagline }}</p>
+			</section>
+			{% endif %}
+		</div>
+		{% if site.featuretteLink %}
+		<ul class="actions">
+			<li><a href="{{ site.featuretteLink | prepend: site.baseurl }}" class="button">Learn more</a></li>
+		</ul>
+		{% endif %}
+	</div>
+</section>
+{% endif %}
