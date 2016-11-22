@@ -1,7 +1,7 @@
-# Site settings
-baseurl: "/html5up-hyperspace" # the subpath of your site, e.g. /blog
-url: "https://lufevida.github.io" # the base hostname & protocol for your site
+
 copyright: Untitled
+baseurl: "/html5up-hyperspace"
+url: "https://lufevida.github.io"
 title: Hyperspace
 tagline: by HTML5 UP
 description: "Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />and released for free under the <a href="http://html5up.net/license">Creative Commons</a>."
