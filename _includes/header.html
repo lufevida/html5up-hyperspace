@@ -1,0 +1,14 @@
+<!-- Header -->
+<header id="header">
+	<a href="{{ site.baseurl }}/index.html" class="title">{{ site.title }}</a>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			{% for my_page in site.pages %}
+				{% if my_page.showOnNavigation == true %}
+					<li><a href="{{ my_page.url | prepend: site.baseurl }}" class="active">{{ my_page.title }}</a></li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</nav>
+</header>
