@@ -20,7 +20,7 @@ linkedin: username
 # Featurette -- leave values blank if you do not want them to appear
 featuretteTitle: What we do
 featuretteTagline: Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.
-featuretteLink: elements.html
+featuretteLink: /elements.html
 feature1Title: Lorem ipsum amet
 feature1Tagline: Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.
 feature1Icon: icon major fa-code
