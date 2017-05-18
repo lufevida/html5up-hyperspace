@@ -1,0 +1,72 @@
+[all]
+ignore = **/fontawesome*
+max_lines_per_file = 1000
+use_spaces = True
+file_naming_convention = snake
+
+[all.generic]
+bears = InvalidLinkBear, FilenameBear
+files = **.js, **.html, **.css, **.scss, **.svg, **.md
+
+[all.markdown]
+bears += LineCountBear, MarkdownBear, LineLengthBear, SpaceConsistencyBear
+files = **.md
+language = markdown
+max_line_length = 600
+
+[all.yaml]
+bears += InvalidLinkBear, FilenameBear, LineCountBear, YAMLLintBear, SpaceConsistencyBear
+files = **.yml
+language = yaml
+max_line_length = 300
+link_ignore_list =
+  https://lufevida.github.io
+
+[all.html]
+bears += LineCountBear, LineLengthBear, HTMLLintBear, SpaceConsistencyBear
+files = **.html
+ignore = elements.html
+language = html
+use_spaces = False
+max_line_length = 200
+htmllint_ignore = tabs, indentation, void_element, optional_tag, entities, protocol
+
+[all.scss]
+bears += LineCountBear, LineLengthBear, SpaceConsistencyBear
+files = **.scss
+ignore = assets/sass/libs/_skel.scss
+language = scss
+use_spaces = False
+max_line_length = 200
+
+[all.xml]
+bears += LineCountBear, LineLengthBear, XMLBear, SpaceConsistencyBear
+files = **.svg
+language = xml
+use_spaces = False
+max_line_length = 200
+
+[all.javascript]
+bears += LineCountBear, LineLengthBear
+language = js
+use_spaces = False
+max_line_length = 700
+
+[all.javascript.other]
+bears += SpaceConsistencyBear
+files = **.js
+ignore = **.min.js, assets/js/util.js
+
+[all.javascript.util]
+# There is one line in util.js that is nicely formatted
+# but SpaceConsistencyBear wants to format incorrectly.
+files = assets/js/util.js
+
+[all.css]
+bears += LineCountBear, LineLengthBear, SpaceConsistencyBear
+files = **.css
+ignore = **.min.css
+language = css
+use_spaces = False
+max_line_length = 500
+max_lines_per_file = 4000
