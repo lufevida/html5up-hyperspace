@@ -3,6 +3,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+/* global skel */
 
 (function($) {
 
@@ -176,7 +177,8 @@
 						$image.css('background-image', 'url(' + $img.attr('src') + ')');
 
 					// Set background position.
-						if (x = $img.data('position'))
+						x = $img.data('position');
+						if (x)
 							$image.css('background-position', x);
 
 					// Hide <img>.
