@@ -48,14 +48,20 @@ max_line_length = 200
 
 [all.javascript]
 bears += LineCountBear, LineLengthBear
+ignore = **.min.js, assets/js/ie/html5shiv.js
 language = js
 use_spaces = False
 max_line_length = 700
 
+[all.javascript.eslint]
+bears = ESLintBear
+files = **.js
+eslint_config = .eslintrc.yml
+
 [all.javascript.other]
 bears += SpaceConsistencyBear
 files = **.js
-ignore = **.min.js, assets/js/util.js
+ignore += assets/js/util.js
 
 [all.javascript.util]
 # There is one line in util.js that is nicely formatted
